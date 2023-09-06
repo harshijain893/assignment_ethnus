@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Combined Page
+    </title>
+    <style>
+        /* Styles for the horizontal navigation bar */
+        .horizontal-nav {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: #999; /* Grey background color */
+            border: 1px solid #000; /* Black border */
+        }
+
+        .horizontal-nav li {
+            display: inline-block; /* Display links side by side */
+            border-right: 1px solid #bbb;
+            margin-right: 5px;
+        }
+
+        .horizontal-nav li:last-child {
+            border-right: none;
+        }
+
+        .horizontal-nav li a {
+            display: block;
+            color: blue; /* Blue text color */
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .horizontal-nav li a:hover:not(.active) {
+            background-color: #363232;
+        }
+
+        .horizontal-nav .active {
+            background-color: #3c3d3d;
+        }
+
+        /* Styles for the vertical navigation bar */
+        .vertical-nav {
+            list-style-type: none;
+            margin: 20px 0;
+            padding: 0;
+            width: 300px;
+            background-color: #93d7e4;
+            float: left;
+        }
+
+        .vertical-nav li a {
+            display: block;
+            color: blue;
+            font-weight: bold;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+
+        /* Change the link color on hover */
+        .vertical-nav li a:hover {
+            background-color: #e29819;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <a href="./index.html">Index Page</a>
+    <h1>Horizontal Navigation Bar</h1>
+    <!-- Horizontal Navigation -->
+    <ul class="horizontal-nav">
+        <li><a href="./index.html" class="active">Home</a></li>
+        <li><a href="https://www.java.com/en/">Java</a></li>
+        <li><a href="https://www.w3schools.com/html/">HTML</a></li>
+        <li><a href="https://www.w3schools.com/css/default.asp">CSS</a></li>
+    </ul>
+
+    <!-- Add some space between horizontal and vertical navigation -->
+    <div style="clear:both;"></div>
+
+    <h1>Vertical Navigation Bar</h1>
+    <!-- Vertical Navigation -->
+    <ul class="vertical-nav">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="https://www.java.com/">Java</a></li>
+        <li><a href="https://www.w3schools.com/css/">CSS</a></li>
+        <li><a href="https://www.w3schools.com/html/default.asp">HTML</a></li>
+        <li><a href="https://getbootstrap.com/">Bootstrap</a></li>
+    </ul>
+</body>
+</html>
+
